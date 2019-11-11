@@ -1,24 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './styles.css';
+import Nav from './Navbar.jsx'
 
 function App() {
+  const arrList=[{title:"Home"},{title:"Services",subServices:["For Entrepreneurs","For Students","For hobbyists"]},{title:"Contact"}];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav myList={arrList}/>
     </div>
   );
 }
